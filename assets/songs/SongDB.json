@@ -1,22 +1,22 @@
 {
-    "Tracks":{
-        "0":{
+    "Tracks":[
+        {
           "name": "Come with me",
           "source": "QuickyForDaddy.mp3",
           "date": "2019-10-04",
           "typeBeat": ""
         },
-        "1":{
+        {
             "name":"",
             "source":"TrippieReddTypeBeat.mp3",
             "date":"2019-11-23",
             "typeBeat":["Trippie Redd"]
         },
-        "2":{
+        {
             "name":"",
             "source":"",
             "date":"",
             "typeBeat":""
-        }
+    ]
     }
 }
