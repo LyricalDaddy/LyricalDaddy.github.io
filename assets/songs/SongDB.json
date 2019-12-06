@@ -1,10 +1,10 @@
 {
     "Tracks":[
         {
-          "name": "Come with me",
-          "source": "QuickyForDaddy.mp3",
-          "date": "2019-10-04",
-          "typeBeat": ""
+            "name": "Come with me",
+            "source": "QuickyForDaddy.mp3",
+            "date": "2019-10-04",
+            "typeBeat": []
         },
         {
             "name":"",
@@ -16,7 +16,7 @@
             "name":"",
             "source":"",
             "date":"",
-            "typeBeat":""
+            "typeBeat": []
         }
     ]
 }
