@@ -2,3 +2,12 @@ body{
     background-color: rgb(138, 43, 226);
     color: white;
 }
+
+
+
+#trackContainer{
+    background-color: white;
+    color: black;
+    margin: 30px;
+
+}

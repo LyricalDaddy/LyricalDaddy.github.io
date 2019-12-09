@@ -33,6 +33,7 @@ function loadTrackList(callback) {
 function renderTracks(response){
   trackList.Tracks.forEach(function(track){
     console.log(track.name);
+    songDIV.innerHTML += "<div id=" + "trackContainer " + "class="+ "col" +">"+ track.name +"</div>"
   });
 }
 
