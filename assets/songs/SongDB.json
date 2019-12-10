@@ -3,36 +3,48 @@
         {
             "name": "Quicky",
             "source": "QuickyForDaddy.mp3",
+            "BPM":"0",
+            "Key":"idk",
             "date": "2019-10-04",
             "typeBeat": []
         },
         {
             "name":"No Love",
             "source":"TrippieReddTypeBeat.mp3",
+            "BPM":"0",
+            "Key":"idk",
             "date":"2019-11-23",
             "typeBeat":["Trippie Redd"]
         },
         {
             "name":"Dont Leave me",
             "source":"",
+            "BPM":"0",
+            "Key":"idk",
             "date":"",
             "typeBeat": []
         },
         {
             "name":"Moon",
             "source":"",
+            "BPM":"0",
+            "Key":"idk",
             "date":"",
             "typeBeat": []
         },
         {
             "name":"Princess",
             "source":"",
+            "BPM":"0",
+            "Key":"idk",
             "date":"",
             "typeBeat": []
         },
         {
             "name":"",
             "source":"",
+            "BPM":"0",
+            "Key":"",
             "date":"",
             "typeBeat": []
         }

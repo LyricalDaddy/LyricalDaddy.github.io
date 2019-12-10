@@ -3,11 +3,17 @@ body{
     color: white;
 }
 
-
-
 #trackContainer{
     background-color: white;
     color: black;
     margin: 30px;
 
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: rgb(79, 2, 82);
 }

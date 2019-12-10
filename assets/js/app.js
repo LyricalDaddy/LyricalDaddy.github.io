@@ -1,6 +1,8 @@
 var songDIV = document.getElementById("insertSongsHere");
 var xmlhttp = new XMLHttpRequest();
-
+var playBTN;
+var test = document.querySelector("h1");
+var currentSong = document.querySelector("#currentSong");
 
 // Objects have to be created so you can fill them up with info
 var Tracks = {
@@ -14,9 +16,12 @@ var trackList = {
   Tracks: []
 }
 
+// Wird beim Aufrufen der seite ausgeführt -- verwendet eine Callbackfunction damit auf response des GET requests gewartet wird bevor weiter gearbeitet wird
+function startUp() {
+  loadTrackList(renderTracks);
+}
+// Liest die JSON und schreibt sie ins Obj tracklist
 function loadTrackList(callback) {
-  // reads what came from get request und verarbeitet es in dem Fall von JSON 2 tracklist Obj
-  // "onReadyStateChange"  is an EventHandler that runs everytime the .readyState changes !
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
@@ -29,14 +34,25 @@ function loadTrackList(callback) {
   xmlhttp.open("GET", "https://raw.githubusercontent.com/LyricalDaddy/LyricalDaddy.github.io/master/assets/songs/SongDB.json", true);
   xmlhttp.send();
 }
-
+// Verwendet das trackList Obj um es auf die Website zu schreiben
+// NEEDED AS CALLBACK BECAUSE U NEED TO WAIT UNTIL SHIT LOADS SO YOU CAN WORK ON IT
 function renderTracks(response){
   trackList.Tracks.forEach(function(track){
     console.log(track.name);
-    songDIV.innerHTML += "<div id=" + "trackContainer " + "class="+ "col" +">"+ track.name +"</div>"
+    // <div id = "trackContainer" class = "col-5"><span id = "play-button"> track.name </div>
+    //songDIV.innerHTML += "<div id=" + "trackContainer " + "class="+ "col-5" +">"+ "<span id="+"play-button"+">▶</span>" + track.name +"</div>"
+    songDIV.innerHTML += '<div id="trackContainer" class="col-5"><span id="play-button">▶ </span>' + track.name +'</div>'
   });
+  // Needs to be called here because at this point the HTML is loaded
+  addBTNfunctionality()
 }
 
-function startUp() {
-  loadTrackList(renderTracks);
+function addBTNfunctionality(){
+  playBTN = document.querySelectorAll("#play-button");
+
+  playBTN.forEach(function(btn){
+    btn.addEventListener("click",function(){
+      // add functionality
+    })
+  })
 }
