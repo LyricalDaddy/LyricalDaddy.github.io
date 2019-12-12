@@ -42,6 +42,7 @@ function renderTracks(response){
     // <div id = "trackContainer" class = "col-5"><span id = "play-button"> track.name </div>
     //songDIV.innerHTML += "<div id=" + "trackContainer " + "class="+ "col-5" +">"+ "<span id="+"play-button"+">▶</span>" + track.name +"</div>"
     songDIV.innerHTML += '<div id="trackContainer" class="col-5"><span id="play-button">▶ </span>' + track.name +'</div>'
+    
   });
   // Needs to be called here because at this point the HTML is loaded
   addBTNfunctionality()
